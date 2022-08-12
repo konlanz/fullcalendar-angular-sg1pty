@@ -1,0 +1,23 @@
+<full-calendar
+      #calendar
+      schedulerLicenseKey="GPL-My-Project-Is-Open-Source"
+      locale="pl"
+      weekNumberCalculation="ISO"
+      slotDuration="00:30:00"
+      nowIndicator=true
+      editable=true
+      fixedWeekCount=false
+      showNonCurrentDates=false
+      [plugins]="calendarOptions.plugins"
+      [header]="calendarOptions.header"
+      [buttonText]="calendarOptions.buttonText"
+      [views]="calendarOptions.views"
+      [defaultView]="calendarOptions.defaultView"
+      [events]="events"
+      (select)="calendarSelect($event)"
+      (eventDragStop)="calendarEventDragStop($event)"
+      (eventDrop)="calendarEventDrop($event)"
+      (eventResize)="calendarEventResize($event)"
+      (eventClick)="calendarEventClick($event)"
+      (drop)="calendarDrop($event)"
+    ></full-calendar>
